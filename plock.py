@@ -2,8 +2,9 @@ import random
 import string
 import pyperclip
 
-# 
+#  G.list
 global profiles_list
+
 
 class Profile:
     '''
@@ -24,31 +25,33 @@ class Profile:
         self.password = password
 
     def save_profile(self):
-        Function to save a newly created user instance
+        '''
+        Function to save a newly created profile instance
         '''
         Profile.profiles_list.append(self)
 
+
 class Credential:
-   '''
-   Class to create  account credentials, generate passwords and save their information
-   '''
-   # Class Variables
-   credentials_list = []
-   profile_credentials_list = []
-   @classmethod
-   def check_profile(cls, first_name, password):
+    '''
+    Class to create  account credentials, generate passwords and save their information
+    '''
+    # Class Variables
+    credentials_list = []
+    profile_credentials_list = []
+    @classmethod
+    def check_profile(cls, first_name, password):
         '''
-        Method that checks if the name and password entered match entries in the users_list
+        Method that checks if the name and password entered match entries in the profiles_list
         '''
         current_profile = ''
         for profile in Profile.profiles_list:
             if (profile.first_name == first_name and profile.password == password):
                 current_profile = profile.first_name
         return current_profile
-    
+
     def __init__(self, profile_name, site_name, account_name, password):
         '''
-        Method to define the properties for each profile object. 
+        Method to define the properties for each profile object.
         '''
 
         # instance variables
@@ -80,8 +83,8 @@ class Credential:
         profile_credentials_list = []
         for credential in cls.credentials_list:
             if credential.profile_name == profile_name:
-                user_credentials_list.append(credential)
-        return user_credentials_list
+                profile_credentials_list.append(credential)
+        return profile_credentials_list
 
     @classmethod
     def find_by_site_name(cls, site_name):
