@@ -8,3 +8,9 @@ class TestProfile(unittest.TestCase):
     Args:
         unittest.TestCase: helps in creating test cases
     '''
+
+    def setUp(self):
+        '''
+        Function to create a profile account before each test
+        '''
+        self.new_profile = Profile('mark', 'aguero', 'sergio10')
