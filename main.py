@@ -66,7 +66,7 @@ def copy_credential(site_name):
 
 def main():
     print(' ')
-    print('Hello! Welcome to Password Locker.')
+    print('Greetings! Enjoy the Password Locker experience.')
     while True:
         print(' ')
         print("-"*60)
@@ -81,12 +81,12 @@ def main():
             print(' ')
             print('To create a new account:')
             first_name = input('Enter your first name - ').strip()
-            last_name = input('Enter your last name - ').strip()
+            sur_name = input('Enter your surname - ').strip()
             password = input('Enter your password - ').strip()
-            save_profile(create_profile(first_name, last_name, password))
+            save_profile(create_profile(first_name, sur_name, password))
             print(" ")
             print(
-                f'New Account Created for: {first_name} {last_name} using password: {password}')
+                f'New Account Created for: {first_name} {sur_name} using password: {password}')
         elif short_code == 'si':
             print("-"*60)
             print(' ')

@@ -21,7 +21,7 @@ class TestProfile(unittest.TestCase):
         Test to if check the initialization/creation of profile instances is properly done
         '''
         self.assertEqual(self.new_profile.first_name, 'mark')
-        self.assertEqual(self.new_profile.last_name, 'aguero')
+        self.assertEqual(self.new_profile.sur_name, 'aguero')
         self.assertEqual(self.new_profile.password, 'sergio10')
     
     def test_save_profile(self):
