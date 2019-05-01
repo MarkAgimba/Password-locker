@@ -1,6 +1,7 @@
 #! /usr/bin/env python3
 # import pyperclip
 from plock import Profile, Credential
+import random
 
 
 def create_profile(fname, lname, password):
