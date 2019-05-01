@@ -25,7 +25,7 @@ To log in to an account stored
 
 $ python3 main.py si
 ```
-To exit the application
+To exit the application you
 $ python3 main.py dn
 
 # Technologies Used
