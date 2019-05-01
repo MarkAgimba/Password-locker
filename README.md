@@ -17,7 +17,7 @@ $ pip install pyperclip
 Run this command for first time to run the app & add new account and its credentials.
 $ python3 main.py
 
-To add new account
+To add a new account
 ```
 $ python3 main.py cl[account_name]
 ``
